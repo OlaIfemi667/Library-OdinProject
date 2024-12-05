@@ -79,7 +79,7 @@ function createDivs()
 
 
 function main(){
-    const firstBook = new Book("Ola", "Fifty Shades of Ola", 666, true);
+    const firstBook = new Book("6ix9ine", "How to be a rat?", 69, true);
     addBookToLibrary(firstBook);
     createDivs();
     addingInteraction(); 
