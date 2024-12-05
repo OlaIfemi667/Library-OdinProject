@@ -52,21 +52,25 @@ function createDivs()
     const principal = document.querySelector("#main");
     const dialogBook = document.querySelector("#dialogBook");
     const AnnulerBook = document.querySelector("#cancelFromBook");
+    const supprimerBook = document.querySelector("#supprimerBook");
 
     principal.innerHTML = ""
     myLibrary.forEach((element, index) => {
         let aDiv = document.createElement("div");
-        
         aDiv.classList.add("book");
         aDiv.textContent = `${element.titre}`;
         principal.appendChild(aDiv);
         aDiv.addEventListener("click", () => {
-            showDetails(element);
             dialogBook.showModal();
+            showDetails(element);
+            
         } )
     });
 
     AnnulerBook.addEventListener("click", () => {
+        dialogBook.close();
+    })
+    supprimerBook.addEventListener("click", () => {
         dialogBook.close();
     })
     
