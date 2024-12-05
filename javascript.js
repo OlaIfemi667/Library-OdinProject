@@ -33,22 +33,42 @@ function addingInteraction()
 
 }
 
+function showDetails(element){
+    const bookTitle = document.querySelector("#bookTitle");
+    const authorName = document.querySelector("#authorDisplay");
+    const numberPage = document.querySelector("#pageDisplay");
+    const checkbox  = document.querySelector("#checkboxBook")
+    bookTitle.textContent = `${element.titre}`;
+    authorName.textContent = `Écrit par ${element.auteur}`;
+    numberPage.textContent = `${element.pages} pages `;
+    if(element.read)
+        checkbox.checked = true;
+    else
+        checkbox.checked = false;
 
+}
 function createDivs()
 {
     const principal = document.querySelector("#main");
-    
+    const dialogBook = document.querySelector("#dialogBook");
+    const AnnulerBook = document.querySelector("#cancelFromBook");
+
     principal.innerHTML = ""
     myLibrary.forEach((element, index) => {
         let aDiv = document.createElement("div");
-        dialogBook = document.querySelector("#dialogBook");
+        
         aDiv.classList.add("book");
         aDiv.textContent = `${element.titre}`;
         principal.appendChild(aDiv);
         aDiv.addEventListener("click", () => {
+            showDetails(element);
             dialogBook.showModal();
         } )
     });
+
+    AnnulerBook.addEventListener("click", () => {
+        dialogBook.close();
+    })
     
 }
 
