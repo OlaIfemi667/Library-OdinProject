@@ -1,0 +1,79 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: #F2F9FF;
+}
+main{
+    height: 1000px;
+    width: 600px;
+    background-color: white;
+    color: #E195AB;
+}
+#main{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+header{
+    height: 100px;
+    background-color: #FFCCE1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#addingLogo{
+    color: black;
+    font-size: 4em;
+}
+#addingLogo:hover {
+    opacity: 0.5;
+}
+.book{
+    border: 1px solid  black;
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#addBookDialog{
+    height: 300px;
+    width: 300px;
+    border: 5px solid #E195AB;
+    border-radius: 0.5em;
+    
+}
+
+#addBookDialog form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    
+}
+
+.formulaire>input:hover{
+    border: 2px solid #E195AB;
+}
+menu button{
+    border: none;
+    border-radius: 0.5em;
+}
+menu button:hover {
+    background-color: #E195AB;
+}
+
+
+#dialogBook{
+    height: 300px;
+    width: 300px;
+    border: 5px solid #E195AB;
+    border-radius: 0.5em;
+}

@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Library</title>
 </head>
 <body>
-    
+    <main>
+        <header>
+            <dialog id="addBookDialog">
+                <form method="dialog">
+                    <div class="formulaire">
+                        <label for="author">Auteur :</label>
+                        <input type="text" name="author" id="author" placeholder="Nom de l'auteur"></div>
+                    <div class="formulaire">
+                        <label for="title">Titre :</label>
+                        <input type="text" name="title" id="title" placeholder="Titre du livre">
+                    </div>
+                    <div class="formulaire">
+                        <label for="pages">Pages :</label>
+                        <input type="number" name="pages" id="pages" placeholder="Nombre de pages">
+                    </div>
+                    <div class="formulaire">
+                        <label for="read">Lu :</label>
+                        <input type="checkbox" name="read" id="read">
+                    </div>
+            
+                    <menu>
+                        <button value="cancel" id="cancel">Annuler</button>
+                        <button value="submit" id="submit">Valider</button>
+                    </menu>
+                </form>
+            </dialog>
+            
+            <div id="addingLogo">+</div>
+        </header>
+        <div id="main">
+                
+        </div>
+        <dialog id="dialogBook">
+            <div>
+                <h2 id="bookTitle"></h2>
+                <div>
+                    <p id="authorDisplay"></p>
+                    <p id="pageDisplay"></p>
+                    <div id="readOrNot">
+                        <label for="read"> Lu </label>
+                        <input type="checkbox" name="read" id="">
+                    </div>
+                </div>
+            </div>
+        </dialog>
+    </main>
 </body>
 </html>
