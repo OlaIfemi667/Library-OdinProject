@@ -78,6 +78,8 @@ function createDivs()
             showDetails(element);
         })
         supprimerBook.addEventListener("click", () => {
+            myLibrary.splice(index, 1);
+            createDivs();
             dialogBook.close();
         })
     });
