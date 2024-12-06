@@ -18,7 +18,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 }
 header{
     height: 100px;
@@ -35,18 +35,26 @@ header{
     opacity: 0.5;
 }
 .book{
-    border: 1px solid  black;
+    border: 1px solid  #E195AB;
     width: 90%;
     text-align: center;
     padding: 10px;
+    box-shadow: #E195AB 5px 5px;
 }
-
-
+.book:hover{
+    border: 1px solid  #E195AB;
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #E195AB 10px 10px;
+}
+#authorDisplay{
+    font-weight: bold;
+}
 #addBookDialog{
     height: 300px;
     width: 300px;
     border: 5px solid #E195AB;
-    border-radius: 0.5em;
     
 }
 
@@ -64,10 +72,9 @@ header{
 }
 menu button{
     border: none;
-    border-radius: 0.5em;
 }
 menu button:hover {
-    background-color: #E195AB;
+    box-shadow: #E195AB 2px 2px;
 }
 
 
@@ -75,5 +82,19 @@ menu button:hover {
     height: 300px;
     width: 300px;
     border: 5px solid #E195AB;
-    border-radius: 0.5em;
+}
+
+#BookDisplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+#BookDetail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }

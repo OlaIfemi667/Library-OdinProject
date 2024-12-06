@@ -40,21 +40,24 @@
         
         
         <dialog id="dialogBook">
-            <div>
-                <h2 id="bookTitle"></h2>
-                <div>
-                    <p id="authorDisplay"></p>
-                    <p id="pageDisplay"></p>
-                    <div id="readOrNot">
-                        <label for="read"> Lu </label>
-                        <input type="checkbox" name="read" id="checkboxBook">
+            <div id="BookDisplay">
+                <div id="BookDetail">
+                    <h2 id="bookTitle"></h2>
+                    <div>
+                        <p id="authorDisplay"></p>
+                        <p id="pageDisplay"></p>
+                        <div id="readOrNot">
+                            <p></p>
+                        </div>
                     </div>
                 </div>
+                <menu>
+                    <button value="cancel" id="cancelFromBook">Annuler</button>
+                    <button id="supprimerBook">Supprimer</button>
+                    <button id="toggleRead">Toggle Read status</button>
+                </menu>
             </div>
-            <menu>
-                <button value="cancel" id="cancelFromBook">Annuler</button>
-                <button id="supprimerBook">Supprimer</button>
-            </menu>
+            
         </dialog>
         <div id="main">
                 
